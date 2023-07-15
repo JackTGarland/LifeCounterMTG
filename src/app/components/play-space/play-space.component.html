@@ -1,0 +1,23 @@
+<div class="h-full w-full grid grid-cols-3" [class.rotate-180]="orientation == 180" [style.background-color]="bgColour"
+    [style.color]="textColour">
+    <div class="flex flex-col text-5xl">
+        <button class="w-full h-full " (click)="onDecrement(1)">
+            - 1
+        </button>
+        <button class="w-full h-full " (click)="onDecrement(5)">
+            - 5
+        </button>
+    </div>
+    <div class="self-center place-self-center text-9xl">
+        {{life}}
+    </div>
+    <div class="flex flex-col text-5xl">
+
+        <button class="w-full h-full" (click)="onIncrement(1)">
+            +1
+        </button>
+        <button class="w-full h-full" (click)="onIncrement(5)">
+            +5
+        </button>
+    </div>
+</div>
